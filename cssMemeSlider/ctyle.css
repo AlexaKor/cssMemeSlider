@@ -1,0 +1,14 @@
+.slider{
+    margin: auto;
+    margin-top: 5%;
+        width: 80vw;
+    padding-top: 52.26%;
+    background-color: blueviolet;
+}
+#slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    
+}
