@@ -36,44 +36,44 @@ height: 90%;
     grid-area: r2;
     font-style: italic;
     font-size: 2em;
-    color: aliceblue;
     opacity: 0; 
       transition: 1s;
+      color: aliceblue;
     
 }
 #chec1{
     grid-area: sl1;
-    
+    background-color: hwb(207 53% 19%);
    }
 #chec2{
     grid-area: sl2;
-    
+    background-color: hwb(207 53% 19%);
    }
 #chec3{
     grid-area: sl3;
-}
+    background-color: hwb(207 53% 19%);
+   }
 #chec4{
     grid-area: sl4;
-    
+    background-color: hwb(207 53% 19%);
    }
 #chec5{
     grid-area: sl5;
-}
+    background-color: hwb(207 53% 19%);
+   }
 
 
-#chec1:checked ~ #img1{
+   #chec1:checked ~ #img1{
     opacity: 1;
     transition: 1s; 
-   
+    
    }
    #chec1:checked ~ #img1+#lab1{
-
     opacity: 1;
+    transition: 45ms; 
     transform: translateX(10%);
   
-  
-   }  
-
+   }
    #chec2:checked ~ #img2{
     opacity: 1;
     transition: 1s; 
@@ -82,8 +82,7 @@ height: 90%;
    #chec2:checked ~ #img2+#lab2{
 
     opacity: 1;
-    transform: translateX(10%);
-  
+    transition: 45ms; 
   
    }
    #chec3:checked ~ #img3{
@@ -94,9 +93,8 @@ height: 90%;
    #chec3:checked ~ #img3+#lab3{
 
     opacity: 1;
+    transition: 45ms; 
     transform: translateX(10%);
-  
-  
    }
    #chec4:checked ~ #img4{
     opacity: 1;
@@ -106,8 +104,7 @@ height: 90%;
    #chec4:checked ~ #img4+#lab4{
 
     opacity: 1;
-    transform: translateX(10%);
-  
+    transition: 45ms; 
   
    }
    #chec5:checked ~ #img5{
@@ -118,7 +115,6 @@ height: 90%;
    #chec5:checked ~ #img5+#lab5{
 
     opacity: 1;
+    transition: 45ms; 
     transform: translateX(10%);
-  
-  
    }
