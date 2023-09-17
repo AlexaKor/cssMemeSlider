@@ -1,14 +1,124 @@
+
 .slider{
     margin: auto;
-    margin-top: 5%;
-        width: 80vw;
-    padding-top: 52.26%;
-    background-color: blueviolet;
+    padding: 0;
+    margin-top: 2vh;
+        width: 80%;
+        height: 80%;
+        background-color: hsl(192, 78%, 74%);
 }
-#slider{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr;
-    
+ 
+.slider_picture{
+    width: 100%;
+    height: 100%;
+       display: grid;
+      grid-template-rows: 3% 1.5fr 0.2fr 3%;
+       grid-template-columns:3% 1fr repeat(5, 0.1fr) 3% ; 
+       grid-template-areas:
+       "z1 z z z z z z z2"
+       "z1 r1 r1 r1 r1 r1 r1 z2"
+       "z1 r2 sl1 sl2 sl3 sl4 sl5 z2"
+       ;
+      
+       background-color: black;
+       
+}
+
+.slider_img {
+        width: 100%;
+height: 90%;
+   border-radius: 3% ;
+    grid-area: r1;
+      opacity: 0; 
+      transition: 1s;
+   }
+   .img_title{
+    grid-area: r2;
+    font-style: italic;
+    font-size: 2em;
+    color: aliceblue;
+    opacity: 0; 
+      transition: 1s;
     
 }
+#chec1{
+    grid-area: sl1;
+    
+   }
+#chec2{
+    grid-area: sl2;
+    
+   }
+#chec3{
+    grid-area: sl3;
+}
+#chec4{
+    grid-area: sl4;
+    
+   }
+#chec5{
+    grid-area: sl5;
+}
+
+
+#chec1:checked ~ #img1{
+    opacity: 1;
+    transition: 1s; 
+   
+   }
+   #chec1:checked ~ #img1+#lab1{
+
+    opacity: 1;
+    transform: translateX(10%);
+  
+  
+   }  
+
+   #chec2:checked ~ #img2{
+    opacity: 1;
+    transition: 1s; 
+   
+   }
+   #chec2:checked ~ #img2+#lab2{
+
+    opacity: 1;
+    transform: translateX(10%);
+  
+  
+   }
+   #chec3:checked ~ #img3{
+    opacity: 1;
+    transition: 1s; 
+   
+   }
+   #chec3:checked ~ #img3+#lab3{
+
+    opacity: 1;
+    transform: translateX(10%);
+  
+  
+   }
+   #chec4:checked ~ #img4{
+    opacity: 1;
+    transition: 1s; 
+   
+   }
+   #chec4:checked ~ #img4+#lab4{
+
+    opacity: 1;
+    transform: translateX(10%);
+  
+  
+   }
+   #chec5:checked ~ #img5{
+    opacity: 1;
+    transition: 1s; 
+   
+   }
+   #chec5:checked ~ #img5+#lab5{
+
+    opacity: 1;
+    transform: translateX(10%);
+  
+  
+   }
